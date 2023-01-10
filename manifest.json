@@ -1,0 +1,22 @@
+{
+	"manifest_version": 2,
+	"name": "Coursera Subtitle Translation",
+	"description": "Coursera 字幕中文翻译",
+	"icons": {
+		"16": "imgs/icon16.png",
+		"32": "imgs/icon32.png",
+		"128": "imgs/icon128.png"
+	},
+	"version": "1.0.0",
+	"content_scripts": [
+		{
+			"matches": ["*://www.coursera.org/*"],
+			"js": ["js/content.js"]
+		}
+	],
+	"browser_action": {},
+	"background": {
+		"scripts": ["js/background.js"],
+		"persistent": false
+	}
+}
